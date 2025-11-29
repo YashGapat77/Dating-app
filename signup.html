@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Join DailyMatch Today</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/interactive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page">
+    <!-- Animated Background -->
+    <div class="auth-background">
+        <div class="floating-hearts-slow">
+            <span class="heart">💝</span>
+            <span class="heart">💕</span>
+            <span class="heart">💖</span>
+        </div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-card animated-entrance">
+            <!-- Progress Steps -->
+            <div class="signup-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 33%"></div>
+                </div>
+                <div class="progress-steps">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                        <span class="step-label">Account</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Profile</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Verify</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-header">
+                <a href="index.html" class="back-link">← Back to Home</a>
+                <div class="logo-section">
+                    <span class="logo-icon animated-bounce">💝</span>
+                    <h1>Join DailyMatch</h1>
+                </div>
+                <p>Find meaningful connections in 2 minutes</p>
+
+                <!-- Social Proof -->
+                <div class="social-proof-badge">
+                    <span>🔥 243 people joined in the last hour</span>
+                </div>
+            </div>
+
+            <form id="signupForm" class="auth-form">
+                <!-- Email Field with Validation -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" required placeholder="your@email.com"
+                            autocomplete="email">
+                        <span class="input-icon">📧</span>
+                        <span class="validation-icon" id="emailValidation"></span>
+                    </div>
+                    <span class="error-text" id="emailError"></span>
+                </div>
+
+                <!-- Password Field with Strength Meter -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" required
+                            placeholder="Create a strong password" minlength="8">
+                        <span class="input-icon">🔒</span>
+                        <button type="button" class="toggle-password" onclick="togglePassword('password')">
+                            👁️
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="passwordStrength"></div>
+                        </div>
+                        <span class="strength-text" id="strengthText">Enter password</span>
+                    </div>
+                    <span class="error-text" id="passwordError"></span>
+                </div>
+
+                <!-- Download App Prompt -->
+                <div class="download-prompt">
+                    <div class="prompt-icon">📱</div>
+                    <div class="prompt-content">
+                        <h4>Get the Full Experience</h4>
+                        <p>Download our app for the best dating experience</p>
+                        <div class="mini-download-buttons">
+                            <a href="#" class="mini-download ios">
+                                <img src="assets/icons/apple-small.svg" alt="iOS">
+                            </a>
+                            <a href="#" class="mini-download android">
+                                <img src="assets/icons/android-small.svg" alt="Android">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms Checkbox -->
+                <div class="form-group">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-label">
+                            I agree to the <a href="#" target="_blank">Terms</a> and
+                            <a href="#" target="_blank">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-full btn-large" id="submitBtn">
+                    <span class="btn-text">Create Account & Download App</span>
+                    <span class="btn-loader" style="display: none;">
+                        <span class="spinner"></span> Creating...
+                    </span>
+                </button>
+
+                <!-- Alternative Actions -->
+                <div class="divider">
+                    <span>or sign up with</span>
+                </div>
+
+                <div class="social-signup">
+                    <button type="button" class="social-btn google" onclick="signupWithGoogle()">
+                        <img src="assets/icons/google.svg" alt="Google">
+                        <span>Google</span>
+                    </button>
+                    <button type="button" class="social-btn facebook" onclick="signupWithFacebook()">
+                        <img src="assets/icons/facebook.svg" alt="Facebook">
+                        <span>Facebook</span>
+                    </button>
+                    <button type="button" class="social-btn apple" onclick="signupWithApple()">
+                        <img src="assets/icons/apple.svg" alt="Apple">
+                        <span>Apple</span>
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Log In</a></p>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span>🔒</span>
+                        <span>SSL Secured</span>
+                    </div>
+                    <div class="badge">
+                        <span>✅</span>
+                        <span>Verified Profiles</span>
+                    </div>
+                    <div class="badge">
+                        <span>🛡️</span>
+                        <span>Data Protected</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal" style="display: none;">
+        <div class="modal-content success-content">
+            <div class="success-animation">
+                <div class="checkmark-circle">
+                    <div class="checkmark"></div>
+                </div>
+            </div>
+            <h2>Welcome to DailyMatch! 🎉</h2>
+            <p>Your account has been created successfully</p>
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="redirectToApp()">
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Sign Up - Join DailyMatch Today</title>
+                        <link rel="stylesheet" href="css/styles.css">
+                        <link rel="stylesheet" href="css/animations.css">
+                        <link rel="stylesheet" href="css/interactive.css">
+                        <link rel="stylesheet" href="css/responsive.css">
+                    </head>
+
+                    <body class="auth-page">
+                        <!-- Animated Background -->
+                        <div class="auth-background">
+                            <div class="floating-hearts-slow">
+                                <span class="heart">💝</span>
+                                <span class="heart">💕</span>
+                                <span class="heart">💖</span>
+                            </div>
+                        </div>
+
+                        <div class="auth-container">
+                            <div class="auth-card animated-entrance">
+                                <!-- Progress Steps -->
+                                <div class="signup-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 33%"></div>
+                                    </div>
+                                    <div class="progress-steps">
+                                        <div class="step active">
+                                            <span class="step-number">1</span>
+                                            <span class="step-label">Account</span>
+                                        </div>
+                                        <div class="step">
+                                            <span class="step-number">2</span>
+                                            <span class="step-label">Profile</span>
+                                        </div>
+                                        <div class="step">
+                                            <span class="step-number">3</span>
+                                            <span class="step-label">Verify</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="auth-header">
+                                    <a href="index.html" class="back-link">← Back to Home</a>
+                                    <div class="logo-section">
+                                        <span class="logo-icon animated-bounce">💝</span>
+                                        <h1>Join DailyMatch</h1>
+                                    </div>
+                                    <p>Find meaningful connections in 2 minutes</p>
+
+                                    <!-- Social Proof -->
+                                    <div class="social-proof-badge">
+                                        <span>🔥 243 people joined in the last hour</span>
+                                    </div>
+                                </div>
+
+                                <form id="signupForm" class="auth-form">
+                                    <!-- Email Field with Validation -->
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <div class="input-wrapper">
+                                            <input type="email" id="email" name="email" required
+                                                placeholder="your@email.com" autocomplete="email">
+                                            <span class="input-icon">📧</span>
+                                            <span class="validation-icon" id="emailValidation"></span>
+                                        </div>
+                                        <span class="error-text" id="emailError"></span>
+                                    </div>
+
+                                    <!-- Password Field with Strength Meter -->
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <div class="input-wrapper">
+                                            <input type="password" id="password" name="password" required
+                                                placeholder="Create a strong password" minlength="8">
+                                            <span class="input-icon">🔒</span>
+                                            <button type="button" class="toggle-password"
+                                                onclick="togglePassword('password')">
+                                                👁️
+                                            </button>
+                                        </div>
+                                        <div class="password-strength">
+                                            <div class="strength-bar">
+                                                <div class="strength-fill" id="passwordStrength"></div>
+                                            </div>
+                                            <span class="strength-text" id="strengthText">Enter password</span>
+                                        </div>
+                                        <span class="error-text" id="passwordError"></span>
+                                    </div>
+
+                                    <!-- Download App Prompt -->
+                                    <div class="download-prompt">
+                                        <div class="prompt-icon">📱</div>
+                                        <div class="prompt-content">
+                                            <h4>Get the Full Experience</h4>
+                                            <p>Download our app for the best dating experience</p>
+                                            <div class="mini-download-buttons">
+                                                <a href="#" class="mini-download ios">
+                                                    <img src="assets/icons/apple-small.svg" alt="iOS">
+                                                </a>
+                                                <a href="#" class="mini-download android">
+                                                    <img src="assets/icons/android-small.svg" alt="Android">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Terms Checkbox -->
+                                    <div class="form-group">
+                                        <label class="checkbox-wrapper">
+                                            <input type="checkbox" id="terms" name="terms" required>
+                                            <span class="checkbox-custom"></span>
+                                            <span class="checkbox-label">
+                                                I agree to the <a href="#" target="_blank">Terms</a> and
+                                                <a href="#" target="_blank">Privacy Policy</a>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-primary btn-full btn-large" id="submitBtn">
+                                        <span class="btn-text">Create Account & Download App</span>
+                                        <span class="btn-loader" style="display: none;">
+                                            <span class="spinner"></span> Creating...
+                                        </span>
+                                    </button>
+
+                                    <!-- Alternative Actions -->
+                                    <div class="divider">
+                                        <span>or sign up with</span>
+                                    </div>
+
+                                    <div class="social-signup">
+                                        <button type="button" class="social-btn google" onclick="signupWithGoogle()">
+                                            <img src="assets/icons/google.svg" alt="Google">
+                                            <span>Google</span>
+                                        </button>
+                                        <button type="button" class="social-btn facebook"
+                                            onclick="signupWithFacebook()">
+                                            <img src="assets/icons/facebook.svg" alt="Facebook">
+                                            <span>Facebook</span>
+                                        </button>
+                                        <button type="button" class="social-btn apple" onclick="signupWithApple()">
+                                            <img src="assets/icons/apple.svg" alt="Apple">
+                                            <span>Apple</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="auth-footer">
+                                        <p>Already have an account? <a href="login.html">Log In</a></p>
+                                    </div>
+
+                                    <!-- Trust Badges -->
+                                    <div class="trust-badges">
+                                        <div class="badge">
+                                            <span>🔒</span>
+                                            <span>SSL Secured</span>
+                                        </div>
+                                        <div class="badge">
+                                            <span>✅</span>
+                                            <span>Verified Profiles</span>
+                                        </div>
+                                        <div class="badge">
+                                            <span>🛡️</span>
+                                            <span>Data Protected</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Success Modal -->
+                        <div class="modal" id="successModal" style="display: none;">
+                            <div class="modal-content success-content">
+                                <div class="success-animation">
+                                    <div class="checkmark-circle">
+                                        <div class="checkmark"></div>
+                                    </div>
+                                </div>
+                                <h2>Welcome to DailyMatch! 🎉</h2>
+                                <p>Your account has been created successfully</p>
+                                <div class="modal-actions">
+                                    <button class="btn btn-primary" onclick="redirectToApp()">
+                                        Download App Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script src="js/auth.js"></script>
+                        <script src="js/main.js"></script>
+                        <script src="js/interactive.js"></script>
+                        <script src="js/api.js"></script>
+                    </body>
+
+                    </html>

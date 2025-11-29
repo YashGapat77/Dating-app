@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DailyMatch - Find real love through quality matches. No endless swiping. Download now for iOS and Android.">
+    <meta name="keywords" content="dating app, find love, relationships, matches, dating">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DailyMatch - Real Love, Not Endless Swiping">
+    <meta property="og:description" content="5 quality matches daily. AI-powered compatibility. Download now!">
+    <meta property="og:image" content="https://dailymatch.app/og-image.jpg">
+    <meta property="og:url" content="https://dailymatch.app">
+
+    <title>DailyMatch - Find Real Love | Download Dating App Now</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/interactive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-hearts">
+            <span class="heart">💝</span>
+            <span class="heart">💕</span>
+            <span class="heart">💖</span>
+            <span class="heart">💗</span>
+            <span class="heart">💓</span>
+            <span class="heart">💘</span>
+            <span class="heart">💞</span>
+            <span class="heart">💟</span>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">💝</span>
+                    <span class="logo-text">DailyMatch</span>
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#testimonials" class="nav-link">Success Stories</a>
+                    <a href="#download" class="nav-link">Download</a>
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Phone -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="animated-title">
+                        <span class="word">Find</span>
+                        <span class="word">Real</span>
+                        <span class="word gradient">Love</span>
+                    </h1>
+
+                    <div class="typewriter-container">
+                        <p class="typewriter">
+                            <span id="typedText"></span><span class="cursor">|</span>
+                        </p>
+                    </div>
+
+                    <!-- Download Buttons with Hover Effects -->
+                    <div class="download-buttons">
+                        <a href="https://apps.apple.com/app/dailymatch" class="app-store-btn" target="_blank">
+                            <img src="assets/images/app-store.svg" alt="Download on App Store">
+                            <div class="download-glow"></div>
+                        </a>
+                        <a href="https://play.google.com/store/apps/dailymatch" class="google-play-btn" target="_blank">
+                            <img src="assets/images/google-play.svg" alt="Get it on Google Play">
+                            <div class="download-glow"></div>
+                        </a>
+                    </div>
+
+                    <!-- QR Code for Mobile -->
+                    <div class="qr-download">
+                        <p>Scan to download</p>
+                        <img src="assets/images/qr-code.png" alt="QR Code">
+                    </div>
+
+                    <!-- Live Stats Counter -->
+                    <div class="live-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50000">0</span>+
+                            <span class="stat-label">Happy Couples</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2000000">0</span>+
+                            <span class="stat-label">Matches Made</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="98">0</span>%
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive 3D Phone Mockup -->
+                <div class="phone-mockup-3d">
+                    <div class="phone-device" id="phoneMockup">
+                        <div class="phone-screen">
+                            <div class="screen-content" id="phoneScreen">
+                                <!-- Demo profiles will rotate here -->
+                                <div class="demo-profile-card active">
+                                    <img src="assets/demo/profile1.jpg" alt="Sarah">
+                                    <div class="demo-info">
+                                        <h3>Sarah, 28</h3>
+                                        <p>85% Match</p>
+                                        <span class="location">📍 3 miles away</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-notch"></div>
+                    </div>
+
+                    <!-- Floating UI Elements -->
+                    <div class="floating-notification notification-1">
+                        <img src="assets/demo/avatar1.jpg" alt="Match">
+                        <span>🎉 New Match with Emma!</span>
+                    </div>
+                    <div class="floating-notification notification-2">
+                        <img src="assets/demo/avatar2.jpg" alt="Message">
+                        <span>💬 "Hey! How's your weekend?"</span>
+                    </div>
+                    <div class="floating-notification notification-3">
+                        <span>❤️ Someone liked you!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Proof Ticker -->
+
+    </section>
+
+    <!-- Interactive App Demo Section -->
+    <section class="app-demo" id="demo">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Try Before You Download</h2>
+            <p class="section-subtitle reveal-on-scroll">Experience our unique matching system</p>
+
+            <!-- Swipe Demo -->
+            <div class="swipe-demo-container reveal-on-scroll">
+                <div class="demo-phone">
+                    <div class="phone-frame">
+                        <div class="swipe-cards" id="swipeCards">
+                            <div class="swipe-card" data-user="5">
+                                <img src="assets/demo/user5.jpg" alt="Demo User">
+                                <div class="card-info">
+                                    <h3>Morgan, 31</h3>
+                                    <p>Architect</p>
+                                    <div class="match-percentage">79% Match</div>
+                                </div>
+                            </div>
+                            <div class="swipe-card" data-user="4">
+                                <img src="assets/demo/user4.jpg" alt="Demo User">
+                                <div class="card-info">
+                                    <h3>Casey, 26</h3>
+                                    <p>Yoga Instructor</p>
+                                    <div class="match-percentage">84% Match</div>
+                                </div>
+                            </div>
+                            <div class="swipe-card" data-user="3">
+                                <img src="assets/demo/user3.jpg" alt="Demo User">
+                                <div class="card-info">
+                                    <h3>Sam, 30</h3>
+                                    <p>Entrepreneur</p>
+                                    <div class="match-percentage">91% Match</div>
+                                </div>
+                            </div>
+                            <div class="swipe-card" data-user="2">
+                                <img src="assets/demo/user2.jpg" alt="Demo User">
+                                <div class="card-info">
+                                    <h3>Jordan, 27</h3>
+                                    <p>Graphic Designer</p>
+                                    <div class="match-percentage">88% Match</div>
+                                </div>
+                            </div>
+                            <div class="swipe-card active" data-user="1">
+                                <img src="assets/demo/user1.jpg" alt="Demo User">
+                                <div class="card-info">
+                                    <h3>Alex, 29</h3>
+                                    <p>Software Developer</p>
+                                    <div class="match-percentage">92% Match</div>
+                                </div>
+                                <div class="swipe-hint">
+                                    <span class="swipe-left">← Pass</span>
+                                    <span class="swipe-right">Like →</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swipe-buttons">
+                            <button class="demo-btn pass-btn" onclick="swipeLeft()">
+                                <span>❌</span>
+                            </button>
+                            <button class="demo-btn super-btn" onclick="swipeUp()">
+                                <span>⭐</span>
+                            </button>
+                            <button class="demo-btn like-btn" onclick="swipeRight()">
+                                <span>❤️</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-description">
+                    <h3>Smart Matching Algorithm</h3>
+                    <p>Our AI analyzes 50+ compatibility factors to find your perfect match</p>
+                    <div class="demo-features">
+                        <div class="feature-pill">✓ 5 Quality Matches Daily</div>
+                        <div class="feature-pill">✓ Personality-Based</div>
+                        <div class="feature-pill">✓ Verified Profiles Only</div>
+                        <div class="feature-pill">✓ No Fake Accounts</div>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToDownload()">
+                        Download Now to Start Matching
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features with Parallax -->
+    <section class="features-parallax" id="features">
+        <div class="parallax-layer" data-speed="0.5">
+            <div class="parallax-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Why DailyMatch Works</h2>
+
+            <div class="features-showcase">
+                <!-- AI Chat Feature -->
+                <div class="feature-item reveal-on-scroll" data-animation="slide-up">
+                    <div class="feature-phone">
+                        <div class="phone-mockup">
+                            <img src="assets/mockups/chat-screen.png" alt="Chat">
+                            <div class="animated-messages">
+                                <div class="message-bubble incoming">Hi! I see you love hiking too! 🏔️</div>
+                                <div class="message-bubble outgoing">Yes! What's your favorite trail?</div>
+                                <div class="ai-suggestion-bubble">
+                                    <span class="ai-icon">🤖</span>
+                                    <span>Suggested: "I recently hiked Eagle Peak..."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI Conversation Assistant</h3>
+                        <p>Never run out of things to say with smart icebreakers and conversation starters</p>
+                        <ul class="feature-list">
+                            <li>Personalized icebreakers</li>
+                            <li>Response suggestions</li>
+                            <li>Date ideas based on interests</li>
+                            <li>Conversation tips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Verification Feature -->
+                <div class="feature-item reverse reveal-on-scroll" data-animation="slide-up">
+                    <div class="feature-content">
+                        <div class="feature-icon">✅</div>
+                        <h3>Photo Verification</h3>
+                        <p>Every profile is verified to ensure you're talking to real people</p>
+                        <ul class="feature-list">
+                            <li>Selfie verification</li>
+                            <li>No catfishing</li>
+                            <li>Blue checkmark for verified</li>
+                            <li>Safe dating environment</li>
+                        </ul>
+                    </div>
+                    <div class="feature-phone">
+                        <div class="verification-demo">
+                            <div class="verification-step">
+                                <img src="assets/demo/verification.gif" alt="Verification">
+                                <span class="verified-badge">✓ Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date Planning Feature -->
+                <div class="feature-item reveal-on-scroll" data-animation="slide-up">
+                    <div class="feature-phone">
+                        <div class="date-planning-demo">
+                            <div class="date-card">
+                                <img src="assets/demo/date-idea.jpg" alt="Date">
+                                <h4>Coffee & Art Gallery</h4>
+                                <p>Saturday, 2 PM</p>
+                                <button class="mini-btn">Plan This Date</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">📅</div>
+                        <h3>Smart Date Planning</h3>
+                        <p>Get personalized date suggestions based on mutual interests</p>
+                        <ul class="feature-list">
+                            <li>Local event suggestions</li>
+                            <li>Calendar integration</li>
+                            <li>Weather-aware planning</li>
+                            <li>Budget-friendly options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Find Love in 4 Simple Steps</h2>
+
+            <div class="steps-timeline">
+                <div class="timeline-line"></div>
+
+                <div class="step reveal-on-scroll" data-delay="0">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download & Sign Up</h3>
+                        <p>Quick 2-minute setup with personality questions</p>
+                        <div class="step-animation">
+                            <div class="phone-mini">📱</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step reveal-on-scroll" data-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Get 5 Daily Matches</h3>
+                        <p>Quality matches based on deep compatibility</p>
+                        <div class="step-animation">
+                            <div class="match-cards-mini">
+                                <span>👤</span>
+                                <span>👤</span>
+                                <span>👤</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step reveal-on-scroll" data-delay="400">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Connect & Chat</h3>
+                        <p>AI helps break the ice and keep conversations flowing</p>
+                        <div class="step-animation">
+                            <div class="chat-bubbles-mini">
+                                <span>💬</span>
+                                <span>💬</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step reveal-on-scroll" data-delay="600">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Meet in Real Life</h3>
+                        <p>Plan perfect dates with our smart suggestions</p>
+                        <div class="step-animation">
+                            <div class="heart-success">❤️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Testimonials Carousel -->
+    <section class="testimonials-interactive" id="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Real Love Stories</h2>
+            <p class="section-subtitle reveal-on-scroll">Join thousands who found their perfect match</p>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card active">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" onclick="playVideo(1)">
+                                <img src="assets/testimonials/couple1.jpg" alt="Sarah & Mike">
+                                <div class="play-button">▶️</div>
+                            </div>
+                            <video id="video1" style="display: none;" controls>
+                                <source src="assets/testimonials/couple1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <blockquote>
+                            "We matched on DailyMatch and knew immediately we had something special. The app's focus on
+                            compatibility over looks helped us connect on a deeper level. Engaged after 8 months!"
+                        </blockquote>
+                        <div class="couple-info">
+                            <img src="assets/testimonials/couple1-small.jpg" alt="Couple">
+                            <div>
+                                <strong>Sarah & Mike</strong>
+                                <span>Engaged • Met 8 months ago</span>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" onclick="playVideo(2)">
+                                <img src="assets/testimonials/couple2.jpg" alt="Emma & James">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "The AI conversation helper was a game-changer! As introverts, we struggled with online
+                            dating. DailyMatch made it easy to connect authentically."
+                        </blockquote>
+                        <div class="couple-info">
+                            <img src="assets/testimonials/couple2-small.jpg" alt="Couple">
+                            <div>
+                                <strong>Emma & James</strong>
+                                <span>Together 1 year</span>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="video-wrapper">
+                            <div class="video-thumbnail" onclick="playVideo(3)">
+                                <img src="assets/testimonials/couple3.jpg" alt="Lisa & David">
+                                <div class="play-button">▶️</div>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "5 matches a day was perfect! No overwhelming choices, just quality people. Found my
+                            soulmate on day 3!"
+                        </blockquote>
+                        <div class="couple-info">
+                            <img src="assets/testimonials/couple3-small.jpg" alt="Couple">
+                            <div>
+                                <strong>Lisa & David</strong>
+                                <span>Married 2 years</span>
+                            </div>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev" onclick="prevTestimonial()">‹</button>
+                <button class="carousel-btn next" onclick="nextTestimonial()">›</button>
+
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+
+            <!-- Success Metrics Animation -->
+            <div class="success-metrics reveal-on-scroll">
+                <div class="metric-item">
+                    <svg class="circular-chart">
+                        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                        <circle class="circle-progress" cx="60" cy="60" r="50" stroke-dasharray="314"
+                            stroke-dashoffset="314"></circle>
+                    </svg>
+                    <div class="metric-text">
+                        <span class="percentage" data-target="85">0</span>%
+                        <span class="label">Find Relationships</span>
+                    </div>
+                </div>
+
+                <div class="metric-item">
+                    <svg class="circular-chart">
+                        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                        <circle class="circle-progress" cx="60" cy="60" r="50" stroke-dasharray="314"
+                            stroke-dashoffset="314"></circle>
+                    </svg>
+                    <div class="metric-text">
+                        <span class="percentage" data-target="92">0</span>%
+                        <span class="label">Satisfaction Rate</span>
+                    </div>
+                </div>
+
+                <div class="metric-item">
+                    <svg class="circular-chart">
+                        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                        <circle class="circle-progress" cx="60" cy="60" r="50" stroke-dasharray="314"
+                            stroke-dashoffset="314"></circle>
+                    </svg>
+                    <div class="metric-text">
+                        <span class="percentage" data-target="73">0</span>%
+                        <span class="label">Get Married</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">DailyMatch vs Other Apps</h2>
+
+            <div class="comparison-slider reveal-on-scroll">
+                <div class="comparison-container">
+                    <div class="other-apps">
+                        <h3>Other Dating Apps</h3>
+                        <ul>
+                            <li class="con">❌ Endless swiping fatigue</li>
+                            <li class="con">❌ Superficial matches</li>
+                            <li class="con">❌ Fake profiles & bots</li>
+                            <li class="con">❌ Ghosting culture</li>
+                            <li class="con">❌ No conversation help</li>
+                            <li class="con">❌ Overwhelming choices</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-divider">
+                        <div class="vs-circle">VS</div>
+                    </div>
+
+                    <div class="dailymatch">
+                        <h3>DailyMatch</h3>
+                        <ul>
+                            <li class="pro">✅ 5 quality matches daily</li>
+                            <li class="pro">✅ Deep compatibility matching</li>
+                            <li class="pro">✅ Verified profiles only</li>
+                            <li class="pro">✅ Meaningful connections</li>
+                            <li class="pro">✅ AI conversation assistant</li>
+                            <li class="pro">✅ Focus on quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamified Waitlist Section -->
+    <section class="early-access-game" id="waitlist">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Get VIP Early Access</h2>
+            <p class="section-subtitle reveal-on-scroll">Join the exclusive waitlist and skip the queue!</p>
+
+            <div class="waitlist-container reveal-on-scroll">
+                <div class="waitlist-form">
+                    <input type="email" id="waitlistEmail" placeholder="Enter your email">
+                    <button class="btn btn-primary" onclick="joinWaitlist()">Join Waitlist</button>
+                </div>
+
+                <div class="your-position" style="display: none;" id="waitlistPosition">
+                    <div class="position-display">
+                        <span class="position-label">You're #</span>
+                        <span class="position-number" id="positionNumber">10,234</span>
+                        <span class="position-label">in line</span>
+                    </div>
+
+                    <div class="skip-line-game">
+                        <h3>🚀 Skip the Line!</h3>
+                        <p>Share DailyMatch to move up faster</p>
+
+                        <div class="referral-progress">
+                            <div class="progress-track">
+                                <div class="progress-fill" id="referralProgress" style="width: 0%"></div>
+                                <div class="milestone" style="left: 20%">
+                                    <span class="milestone-icon">🎯</span>
+                                    <span class="milestone-text">1 friend<br>Skip 100</span>
+                                </div>
+                                <div class="milestone" style="left: 40%">
+                                    <span class="milestone-icon">🔥</span>
+                                    <span class="milestone-text">3 friends<br>Skip 500</span>
+                                </div>
+                                <div class="milestone" style="left: 60%">
+                                    <span class="milestone-icon">🚀</span>
+                                    <span class="milestone-text">5 friends<br>Skip 1000</span>
+                                </div>
+                                <div class="milestone" style="left: 80%">
+                                    <span class="milestone-icon">⭐</span>
+                                    <span class="milestone-text">10 friends<br>VIP Access</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="share-buttons">
+                            <button class="share-btn twitter" onclick="shareTwitter()">
+                                <span>🐦</span> Share on Twitter
+                                <span class="bonus">+100 spots</span>
+                            </button>
+                            <button class="share-btn facebook" onclick="shareFacebook()">
+                                <span>📘</span> Share on Facebook
+                                <span class="bonus">+100 spots</span>
+                            </button>
+                            <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+                                <span>💬</span> Share on WhatsApp
+                                <span class="bonus">+100 spots</span>
+                            </button>
+                            <button class="share-btn copy" onclick="copyReferralLink()">
+                                <span>🔗</span> Copy Your Link
+                                <span class="bonus">+50 per signup</span>
+                            </button>
+                        </div>
+
+                        <div class="referral-stats">
+                            <div class="stat">
+                                <span class="stat-number" id="friendsJoined">0</span>
+                                <span class="stat-label">Friends Joined</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" id="spotsSkipped">0</span>
+                                <span class="stat-label">Spots Skipped</span>
+                            </div>
+                        </div>
+
+                        <div class="referral-code">
+                            Your Unique Code: <span class="code" id="referralCode">LOVE2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="download-cta" id="download">
+        <div class="container">
+            <div class="cta-content reveal-on-scroll">
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">💝</span>
+                        <span>DailyMatch</span>
+                    </div>
+                    <p>Quality dating for meaningful connections</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Blog</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Safety Tips</a>
+                    <a href="#">Community Guidelines</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Licenses</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Download</h4>
+                    <a href="#">iOS App</a>
+                    <a href="#">Android App</a>
+                    <a href="#">Press Kit</a>
+                    <a href="#">Brand Assets</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DailyMatch. Made with ❤️ for genuine connections.</p>
+                <div class="language-selector">
+                    <select>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>Français</option>
+                        <option>Deutsch</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Exit Intent Popup -->
+    <div class="exit-popup" id="exitPopup" style="display: none;">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closeExitPopup()">×</button>
+            <div class="popup-body">
+                <h2>Wait! Don't Miss Out! 💔</h2>
+                <p>Get 50% off premium for the first month</p>
+                <div class="popup-offer">
+                    <div class="offer-badge">LIMITED TIME</div>
+                    <div class="offer-price">
+                        <span class="original">$19.99</span>
+                        <span class="discounted">$9.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-large" onclick="claimOffer()">
+                    Claim Your Discount
+                </button>
+                <p class="popup-note">No credit card required • Cancel anytime</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Match Success Animation Container -->
+    <div id="matchAnimationContainer"></div>
+
+    <!-- Confetti Container -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/interactive.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>

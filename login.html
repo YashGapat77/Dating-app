@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DailyMatch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="back-link">← Back</a>
+                <div class="logo">
+                    <span class="logo-icon">💝</span>
+                    <h1>Welcome Back</h1>
+                </div>
+                <p>Login to find your daily matches</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    <span class="error-text" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        Password
+                        <a href="#" class="forgot-link">Forgot?</a>
+                    </label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                    <span class="error-text" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <button type="button" class="social-btn btn-full">
+                    <img src="https://www.google.com/favicon.ico" alt="Google" width="20">
+                    Continue with Google
+                </button>
+
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="signup.html">Sign up free</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
